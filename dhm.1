@@ -1,0 +1,41 @@
+.TH DHM 1 "February 2026" "v1.1.0" "DHM User Manual"
+.SH NAME
+dhm \- Docker Health Monitor, a terminal-based dashboard for Docker.
+.SH SYNOPSIS
+.B dhm
+[\fIOPTIONS\fR]
+.SH DESCRIPTION
+.B dhm
+is a lightweight TUI tool for monitoring Docker containers, 
+visualizing dependencies, and tracking real-time resource usage.
+.SH OPTIONS
+.TP
+.BR \-v ", " \-\-version
+Display version information and exit.
+.TP
+.BR \-h ", " \-\-help
+Display a brief help message and exit.
+.SH INTERACTIVE CONTROLS
+.TP
+.B Arrows
+Navigate through the container tree.
+.TP
+.B Enter
+Lock monitoring focus on the selected container (updates Details panel).
+.TP
+.B I
+Toggle between Lite (1s, fast) and Full (3s, CPU/RAM) monitoring modes.
+.TP
+.B L
+View container logs (reversed, with severity highlighting).
+.TP
+.B R
+Restart the selected container.
+.TP
+.B F1, H
+Show the in-app help modal.
+.TP
+.B ESC, Ctrl+C
+Exit the application or close modal windows.
+.SH AUTHOR
+Created by ladnix.

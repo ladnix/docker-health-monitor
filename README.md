@@ -1,10 +1,22 @@
 # ⬢ DHM - Docker Health Monitor (v1.0.0)
 
-
 A lightweight terminal-based (TUI) tool written in **Go 1.24** for monitoring Docker containers, visualizing their dependencies, and managing their lifecycle.
 
 ![License](https://img.shields.io)
 ![Go Version](https://img.shields.io)
+
+## 🖥️ Interface Preview
+
+╔═════════════════════  Docker Health Monitor  ════════════════════╗
+║⬢ DHM                                                             ║
+║├──report-service                                                 ║
+║│  └──  🔗 db-postgres                                            ║
+║├──backend-api                                                    ║
+║│  ├──  🔗 db-postgres                                            ║
+║│  └──  🔗 cache-redis                                            ║
+║├──cache-redis                                                    ║
+║                                                                  ║
+╚══════════════════════════════════════════════════════════════════╝
 
 ## 🚀 Features
 
@@ -24,13 +36,17 @@ A lightweight terminal-based (TUI) tool written in **Go 1.24** for monitoring Do
 
 ### Build from source
 
+```bash
 git clone github.com/ladnix/docker-health-monitor
-cd dhm
+cd docker-health-monitor
 go build -ldflags="-s -w -X 'main.Version=v1.0.0'" -o dhm .
+```
 
 ### Run
 
+```bash
 ./dhm
+```
 
 ### ⌨️ Hotkeys
 
@@ -43,9 +59,10 @@ go build -ldflags="-s -w -X 'main.Version=v1.0.0'" -o dhm .
 | **F1 / H** | Show help menu |
 | **ESC** | Back / Exit |
 
-### 🧬 How it works (Dependencies)
 
-DHM scans container environment variables. If a variable contains the name of another container (e.g., `DB_HOST=postgres-db`), it automatically creates a visual link in the tree.
+## 🧬 Core Logic
+
+DHM scans container environment variables. If it finds a variable string containing another container's name (e.g., `DB_HOST=postgres-db`), it automatically renders it as a visual dependency link in the tree.
 
 ## 🤝 Author
 

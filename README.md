@@ -23,18 +23,18 @@ dependency mapping and real-time resource tracking.
 ## 🚀 Key Features (v1.1.0 Update)
 
 Dual Monitoring Modes:
-    Lite Mode: High-speed updates (1s) for large-scale environments.
-    Full Mode: Deep inspection (3s) including real-time CPU and RAM metrics.
-    Smart Dependency Graph: Automatically visualizes links between containers
-    by analyzing environment variables.
-    Intelligent Status Analysis: Distinguishes between manual stops (Exit 0/137)
-    and actual application crashes (Exit != 0).
-    Interactive Details: Lock monitoring on a specific container to track its vital
-    signs while navigating the tree.
-    Health-First Sorting: Critical errors and failed services are automatically
-    pinned to the top of the list.
-    Log Streamer: Clean view of container logs with severity highlighting
-    (ERROR/WARN).
+- Lite Mode: High-speed updates (1s) for large-scale environments.
+- Full Mode: Deep inspection (3s) including real-time CPU and RAM metrics.
+- Smart Dependency Graph: Automatically visualizes links between containers
+  by analyzing environment variables.
+- Intelligent Status Analysis: Distinguishes between manual stops (Exit 0/137)
+  and actual application crashes (Exit != 0).
+- Interactive Details: Lock monitoring on a specific container to track its vital
+  signs while navigating the tree.
+- Health-First Sorting: Critical errors and failed services are automatically
+  pinned to the top of the list.
+- Log Streamer: Clean view of container logs with severity highlighting
+  (ERROR/WARN).
 
 ---
 

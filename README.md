@@ -20,7 +20,7 @@ dependency mapping and real-time resource tracking.
 ```
 ---
 
-##🚀 Key Features (v1.1.0 Update)
+## 🚀 Key Features (v1.1.0 Update)
 
 Dual Monitoring Modes:
     Lite Mode: High-speed updates (1s) for large-scale environments.
